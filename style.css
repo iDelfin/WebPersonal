@@ -1,0 +1,125 @@
+*   {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .wrapper,
+    .content
+    {
+        position: relative;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .content
+    {
+        overflow-x: hidden;
+    }
+
+    .content .section 
+    {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .content .name.mine
+    {
+        padding-top: 80px;
+        padding-left: 150px;
+        font-family: "Copperplate", fantasy;
+        
+    }
+
+    .content .section.hero
+    {
+        background-image: url("IMG-20240301-WA0041.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .image-container
+    {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        perspective: 500px;
+        overflow: hidden;
+    }
+
+    .image-container img
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .grow
+    {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .grow img
+    {
+        width:400px;
+        height:200px;
+        margin-left:350px;
+        margin-top:400px;
+        border-radius: 15%;
+        transition: 1s ease;
+    }
+
+    .grow h2
+    {
+        margin-right: 100px;
+        margin-top: 350px;
+        align-self: auto;
+        justify-content: right;
+        text-align: right;
+    }
+
+    .description-mentor
+    {
+        margin-left: 300px;
+        margin-right: 50px;
+        text-align: justify;
+        /*text-indent: 100px;*/
+    }
+
+    .description-gd-titulo
+    {
+        color: #000000;
+    } 
+
+    .description-gd
+    {
+        margin-left: 300px;
+        margin-right: 50px;
+        text-align: justify;
+        color: #000000;
+    }
+        
+    .grow img:hover
+    {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        transition: 1s ease;
+    }
+
+    .grow img
+    {
+        width:400px;
+        height:200px;
+        margin-left:350px;
+        margin-top:400px;
+        border-radius: 15%;
+        transition: 1s ease;
+    }
