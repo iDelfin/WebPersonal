@@ -68,7 +68,7 @@
 
     .grow img
     {
-        width:400px;
+        /*width:400px;*/
         height:200px;
         max-width: auto;
         max-height: 100%;
