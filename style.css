@@ -4,6 +4,22 @@
         box-sizing: border-box;
     }
 
+    /*Detalles del header para que sea horizontal*/
+    header
+    {
+        display: inline;
+    }
+
+    /*Detalles de los botónes del header*/
+    /*Margin se agrego para que se vea con espacio para respirar*/
+    .head-but
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 320px;
+        background-color: #013358;
+    }
+
     .wrapper,
     .content
     {
