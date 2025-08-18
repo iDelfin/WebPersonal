@@ -4,6 +4,19 @@
         box-sizing: border-box;
     }
 
+    header
+    {
+        display: inline;
+    }
+
+    .head-but
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 320px;
+        background-color: #013358;
+    }
+
     .wrapper,
     .content
     {
