@@ -54,24 +54,6 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-    
-    /*
-    .content .section.gradient-purple
-    {
-        display: grid;
-        grid: 150px / auto auto auto;
-        align-self: center;
-    }
-    */
-    .content .section.gradient-purple::after
-    {
-        content: "";
-        clear: both;
-        display: table;
-        text-align: center;
-    }
-
-/*Comentario XD*/
 
     .image-container
     {
@@ -94,6 +76,11 @@
         object-position: center center;
     }
 
+    .section.gradient-purple
+    {
+        /*display: flex;*/
+    }
+
     .grow
     {
         /*justify-content: space-between;
@@ -103,41 +90,17 @@
         padding: 5px;
     }
 
-    /*
-    .grow img
-    {
-        width:400px;
-        height:200px;
-        max-width: auto;
-        max-height: 100%;
-        margin-left:350px;
-        margin-right: auto;
-        margin-top:400px;
-        border-radius: 15%;
-        transition: 1s ease;
-    }
-    */
-
     .grow h2
     {
         margin-right: 100px;
         margin-top: 200px;
-        align-self: auto;
-        justify-content: right;
-        text-align: right;
+        text-align: center;
     }
 
-    .description-mentor
+    /*Seccion de texto chido Mentor Robotica*/
+
+    .description-titulo 
     {
-        margin-left: 500px;
-        margin-right: 50px;
-        text-align: justify;
-        /*text-indent: 100px;*/
-    }
-
-    /*Seccion de texto chido*/
-
-    .description-rb-titulo {
         font-size: 4rem;
         font-weight: bold;
         position: relative;
@@ -146,9 +109,9 @@
         animation: glitch 2s infinite;
     }
 
-    .description-rb-titulo::before,
-    .description-rb-titulo::after {
-    content: 'Mentor Robotica';
+    .description-titulo::before,
+    .description-titulo::after 
+    {
     position: absolute;
     top: 0;
     left: 0;
@@ -156,7 +119,7 @@
     background: transparent;
     clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
     animation: glitch 2s infinite;
-}
+    }
 
     .description-rb-titulo::after
     {
@@ -185,13 +148,26 @@
     }
     /*End of texto chido*/
 
-    .description-gd
+    /*Seccion texto chido Dire Progra*/
+
+    #rb::before,
+    #rb::after 
     {
-        margin-left: 500px;
-        margin-right: 50px;
-        text-align: justify;
-        color: #000000;
+        content: 'Mentor Robotica';
     }
+
+    #gd::before,
+    #gd::after 
+    {
+        content: 'Director de Programacion';
+    }
+
+    #ch::before,
+    #ch::after 
+    {
+        content: 'Club de coheteria';
+    }
+    /*End texto chido progra*/
         
     .grow img:hover
     {
@@ -204,14 +180,12 @@
     .grow img
     {
         width:200px;
-        /*max-width: 75%;*/
         height:100px;
-        margin-left: 130px;
-        margin-right: auto;
+        align-items: center;
+        /*margin-left: 130px;*/
         margin-top:50%;
         border-radius: 50%;
         object-fit: cover;
-        vertical-align:  middle;
         transition: 1s ease;
     }
     
